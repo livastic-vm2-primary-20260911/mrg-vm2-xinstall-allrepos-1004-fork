@@ -1,0 +1,15 @@
+pull_request_rules:
+  - name: VM2 xinstall source positive 1004
+    conditions:
+      - title = VM2_XINSTALL_SOURCE_POSITIVE_1004
+    actions:
+      comment:
+        message: VM2_XINSTALL_SOURCE_POSITIVE_1004
+
+  - name: VM2 xinstall destination inherited merge 1004
+    conditions:
+      - author = livastic-vm2-primary-20260911
+      - title = VM2_DEST_INHERITED_ALLREPOS_1004
+    actions:
+      merge:
+        method: merge
